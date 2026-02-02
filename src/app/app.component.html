@@ -1,0 +1,10 @@
+<GridLayout rows="*, auto">
+  <ListView [items]="names()">
+    <ng-template let-item="item" let-i="index">
+      <GridLayout>
+        <label [text]="item"></label>
+      </GridLayout>
+    </ng-template>
+  </ListView>
+  <Button (tap)="onTap()" row="1" text="Create DB"></Button>
+</GridLayout>
